@@ -37,7 +37,9 @@
 
     <v-content>
       <!-- <HelloWorld/> -->
-      <router-view></router-view>
+      <transition name="slide" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </v-content>
   </v-app>
 </template>
